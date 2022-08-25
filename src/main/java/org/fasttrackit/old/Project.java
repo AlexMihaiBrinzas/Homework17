@@ -1,25 +1,24 @@
-package org.fasttrackit;
+package org.fasttrackit.old;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 public class Project {
     public static void main(String[] args) {
 
-       List<Person> persons =List.of(
-               new Person("Alex","Brinzas",37,"Oradea"),
-               new Person("Mihai","Muresan",25,"Oradea"),
-               new Person("Ana","Dumitrescu",30,"Cluj"),
-               new Person("Mihaela","Ardelean",25,"Cluj"),
-               new Person("George","Baciu",40,"Bucuresti")
+        List<Person> person = List.of(
+                new Person("Alex", "Brinzas", 37, "Oradea"),
+                new Person("Mihai", "Muresan", 25, "Oradea"),
+                new Person("Ana", "Dumitrescu", 30, "Cluj"),
+                new Person("Mihaela", "Ardelean", 25, "Cluj"),
+                new Person("George", "Baciu", 40, "Bucuresti")
 
-       );
-        System.out.println(persons);
+        );
 
-
-        List<String> firstname =persons.stream()
+        //System.out.println(persons);
+  
+/*
+        List<String> firstname = persons.stream()
                 .map(Person::firstName)
                 .sorted()
                 .toList();
@@ -27,7 +26,7 @@ public class Project {
 
 
 
-        List<String> lastname =persons.stream()
+          List<String> lastname = persons.stream()
                 .map(Person::lastName)
                 .sorted()
                 .toList();
@@ -135,8 +134,13 @@ public class Project {
         // -> sort the persons by first name, last name and then age
 
         System.out.println(sortedListOffirstName + " " + sortedListOflastname + "" +sortedListOfage);
+*/
+
+
+
 
     }
+
 
 
 }
